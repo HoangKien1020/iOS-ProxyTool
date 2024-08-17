@@ -2,7 +2,7 @@ Package: vn.hk.proxytool
 Name: Proxy Tool
 Depends: 
 Version: 1.0.0
-Architecture: iphoneos-arm
+Architecture: iphoneos-arm64
 Description: Tool to change iOS proxy
 Maintainer: hk
 Author: zy
