@@ -1,9 +1,12 @@
-TARGET := iphone:clang:15.5:11.0
-ARCHS = arm64 arm64e
+GO_EASY_ON_ME = 1
+DEBUG = 0
+FINALPACKAGE = 1
 
-ADDITIONAL_OBJCFLAGS = -fobjc-arc
+TARGET := iphone:clang:14.5:14.5
+ARCHS = arm64
 
-THEOS_DEVICE_IP = 192.168.0.103 -p 22
+THEOS_PACKAGE_SCHEME = rootless
+THEOS_DEVICE_IP = 192.168.0.108 -p 22
 
 include $(THEOS)/makefiles/common.mk
 
