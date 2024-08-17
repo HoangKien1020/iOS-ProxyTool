@@ -1,12 +1,11 @@
-ARCHS=arm64 armv7 armv7s
-
-TARGET=iphone::7.1
+TARGET := iphone:clang:15.5:11.0
+ARCHS = arm64 arm64e
 
 ADDITIONAL_OBJCFLAGS = -fobjc-arc
 
-THEOS_DEVICE_IP=192.168.1.108
+THEOS_DEVICE_IP = 192.168.0.103 -p 22
 
-include theos/makefiles/common.mk
+include $(THEOS)/makefiles/common.mk
 
 TOOL_NAME = proxytool
 
